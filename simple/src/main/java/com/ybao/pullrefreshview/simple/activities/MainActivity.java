@@ -3,6 +3,7 @@ package com.ybao.pullrefreshview.simple.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.ybao.pullrefreshview.simple.R;
@@ -17,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        System.out.println("1");
 
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.v("-------", "1");
                 startActivity(new Intent(MainActivity.this, FlingActivity.class));
             }
         });
