@@ -19,10 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("测试2的修改");
+        System.out.println("测试1");
+
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.v("-------", "测试2");
+                Log.v("----------", "测试1");
                 startActivity(new Intent(MainActivity.this, FlingActivity.class));
             }
         });
