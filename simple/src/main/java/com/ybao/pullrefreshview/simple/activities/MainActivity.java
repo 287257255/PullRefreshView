@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("2");
+        System.out.println("3");
 
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.v("-------", "2");
+                Log.v("-------", "3");
                 startActivity(new Intent(MainActivity.this, FlingActivity.class));
             }
         });
