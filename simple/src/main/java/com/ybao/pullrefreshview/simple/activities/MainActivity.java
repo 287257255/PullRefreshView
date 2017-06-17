@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.v("-------", "测试2");
-                Log.v("----------", "测试1的修改");
+                Log.v("-------", "测试1");
                 startActivity(new Intent(MainActivity.this, FlingActivity.class));
             }
         });
