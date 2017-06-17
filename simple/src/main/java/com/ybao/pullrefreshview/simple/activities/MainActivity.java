@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        System.out.println("测试2的修改");
         System.out.println("测试1的修改");
         System.out.println("1");
         System.out.println("2");
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("-------", "测试2");
                 Log.v("-------", "测试1");
                 Log.v("-------", "1");
                 Log.v("----------", "2");
