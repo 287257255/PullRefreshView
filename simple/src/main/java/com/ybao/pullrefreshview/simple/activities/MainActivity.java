@@ -20,12 +20,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         System.out.println("2");
         System.out.println("3");
+        System.out.println("1");
 
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.v("-------", "2");
                 Log.v("-------", "3");
+                Log.v("-------", "1");
                 startActivity(new Intent(MainActivity.this, FlingActivity.class));
             }
         });
